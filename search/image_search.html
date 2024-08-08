@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Google Image Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- Update these links to point to the correct files -->
+            <a href="index.html">Text Search</a>
+            <a href="advanced_search.html">Advanced Search</a>
+        </nav>
+    </header>
+    <main>
+        <form action="https://www.google.com/search" method="GET">
+            <!-- Hidden field to specify image search -->
+            <input type="hidden" name="tbm" value="isch">
+
+            <!-- User input for the search query -->
+            <input type="text" name="q" id="image_query" placeholder="Search images..." autofocus>
+
+            <!-- Submit button for the form -->
+            <input type="submit" value="Image Search">
+        </form>
+    </main>
+</body>
+</html>
